@@ -10,23 +10,24 @@
         let n1=0;
         let n2=1;
         let n3;
-        for (let i=0; i<(x-x%2)/2;i++){
+        for (let i=0; i<=x;i++){
             n3=n1+n2;
             n1=n2;
             n2=n3;
+            if (n3>=x){
+                break;
+            }
             console.log(n3);
         }
-        if (n3===x){
+        if (x===n3 ){
             return true;
         } else {
             return false;
         }
-
     }
     // Test
-    let m=21;
+    let m=55;
     console.log(isFibonacci(m));
-
 </script>
 </body>
 </html>
