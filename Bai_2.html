@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xoa 1 phan tu trong mang</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(x,ar) {
+        for (let i=0; i<ar.length;i++){
+            if (x===ar[i]){
+                ar.splice(i,1);
+            }
+        }
+     return ar;
+    }
+    //Test
+    let y=5;
+    let arr1= [4,5,6,9,5,34];
+    console.log(tryRemoveFromArray(y,arr1));
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+<script>
+    function findMax(ar){
+        let max=ar[0];
+        for (let i=0;i<ar.length;i++){
+            if (max<ar[i]){
+                max=ar[i];
+            }
+        }
+        return max;
+    }
+    // Test
+    let arr1= [45,7,5,7,89];
+    console.log(findMax(arr1));
+
+</script>
+</body>
+</html>
